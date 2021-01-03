@@ -7,7 +7,7 @@
     <url>https://github.com/muirandy/distributed-living-documentation-api</url>
     <groupId>com.github.muirandy</groupId>
     <artifactId>distributed-living-documentation-api</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
     <licenses>
@@ -28,7 +28,7 @@
         <connection>scm:git:git@github.com:muirandy/distributed-living-documentation-api.git</connection>
         <developerConnection>scm:git:git@github.com:muirandy/distributed-living-documentation-api.git</developerConnection>
         <url>git@github.com:muirandy/distributed-living-documentation-api.git</url>
-      <tag>HEAD</tag>
+      <tag>distributed-living-documentation-api-1.2</tag>
   </scm>
 
     <properties>
