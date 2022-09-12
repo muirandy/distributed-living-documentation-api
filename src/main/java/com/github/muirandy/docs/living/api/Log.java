@@ -4,15 +4,25 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class Log {
+    private String protocol;
     private String message;
     private String body;
 
     public Log() {
     }
 
-    public Log(String message, String body) {
+    public Log(String protocol, String message, String body) {
+        this.protocol = protocol;
         this.message = message;
         this.body = body;
+    }
+
+    public String getProtocol() {
+        return protocol;
+    }
+
+    public void setProtocol(String protocol) {
+        this.protocol = protocol;
     }
 
     public String getMessage() {
