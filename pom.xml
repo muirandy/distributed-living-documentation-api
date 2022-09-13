@@ -7,7 +7,7 @@
     <url>https://github.com/muirandy/distributed-living-documentation-api</url>
     <groupId>com.github.muirandy</groupId>
     <artifactId>distributed-living-documentation-api</artifactId>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.7</version>
     <packaging>jar</packaging>
 
     <licenses>
