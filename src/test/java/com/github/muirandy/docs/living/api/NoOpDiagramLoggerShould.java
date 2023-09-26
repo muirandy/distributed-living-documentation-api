@@ -2,6 +2,7 @@ package com.github.muirandy.docs.living.api;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.Instant;
 import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -10,7 +11,7 @@ public class NoOpDiagramLoggerShould {
     @Test
     void doNothing() {
         DiagramLogger noOpDiagramLogger = new NoOpDiagramLogger();
-        Log log = new Log("protocol", "source", "target", "message", "body");
+        Log log = new Log(Instant.now().toString(), "protocol", "source", "target", "message", "body");
         noOpDiagramLogger.log(log);
         noOpDiagramLogger.markEnd("id");
         noOpDiagramLogger.markGoldenMaster("id");

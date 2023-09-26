@@ -4,6 +4,7 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 public class Log {
+    private String timestamp;
     private String protocol;
     private String source;
     private String target;
@@ -13,12 +14,21 @@ public class Log {
     public Log() {
     }
 
-    public Log(String protocol, String source, String target, String message, String body) {
+    public Log(String timestamp, String protocol, String source, String target, String message, String body) {
+        this.timestamp = timestamp;
         this.protocol = protocol;
         this.source = source;
         this.target = target;
         this.message = message;
         this.body = body;
+    }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 
     public String getProtocol() {
