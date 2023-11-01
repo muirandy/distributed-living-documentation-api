@@ -9,8 +9,9 @@ import java.util.List;
 public class Logs {
     private List<Log> logs = new ArrayList<>();
 
-    public void add(Log log) {
+    public Logs add(Log log) {
         logs.add(log);
+        return this;
     }
 
     public List<Log> getLogs() {
