@@ -8,37 +8,37 @@ import java.util.List;
 import java.util.Optional;
 
 public class MultipleTestRuns {
-    private List<SingleTestRun> multipleTestRuns = new ArrayList<>();
+    private List<SingleTestSuiteRun> multipleTestRuns = new ArrayList<>();
 
     public MultipleTestRuns() {
     }
 
-    public Optional<SingleTestRun> getLatestSingleTestRunForContainer(String containerId) {
+    public Optional<SingleTestSuiteRun> getLatestSingleTestRunForContainer(String containerId) {
         return multipleTestRuns.stream()
                 .filter(r -> r.getContainerId().equals(containerId))
                 .findFirst();
     }
 
-    public Optional<SingleTestRun> getLatestSingleTestRunForContainerAndTestRunId(String containerId, String testRunId) {
+    public Optional<SingleTestSuiteRun> getLatestSingleTestRunForContainerAndTestRunId(String containerId, String testRunId) {
         return multipleTestRuns.stream()
                 .filter(r -> r.getContainerId().equals(containerId))
                 .filter(r -> r.getTestRunId().equals(testRunId))
                 .findFirst();
     }
 
-    public MultipleTestRuns(List<SingleTestRun> multipleTestRuns) {
+    public MultipleTestRuns(List<SingleTestSuiteRun> multipleTestRuns) {
         this.multipleTestRuns = multipleTestRuns;
     }
 
-    public void add(SingleTestRun singleTestRun) {
-        multipleTestRuns.add(singleTestRun);
+    public void add(SingleTestSuiteRun singleTestSuiteRun) {
+        multipleTestRuns.add(singleTestSuiteRun);
     }
 
-    public List<SingleTestRun> getMultipleTestRuns() {
+    public List<SingleTestSuiteRun> getMultipleTestRuns() {
         return multipleTestRuns;
     }
 
-    public void setMultipleTestRuns(List<SingleTestRun> multipleTestRuns) {
+    public void setMultipleTestRuns(List<SingleTestSuiteRun> multipleTestRuns) {
         this.multipleTestRuns = multipleTestRuns;
     }
 

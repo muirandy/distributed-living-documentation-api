@@ -5,19 +5,18 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Map;
 import java.util.Optional;
 
-public class SingleTestRun {
+public class SingleTestSuiteRun {
     private String containerId;
     private String testRunId;
     private Map<String, Logs> logsForTestRun;
 
-    public SingleTestRun() {
+    public SingleTestSuiteRun() {
     }
 
-    public SingleTestRun(String containerId, String testRunId, Map<String, Logs> logsForTestRun) {
+    public SingleTestSuiteRun(String containerId, String testRunId, Map<String, Logs> logsForTestRun) {
         this.containerId = containerId;
         this.testRunId = testRunId;
         this.logsForTestRun = logsForTestRun;
